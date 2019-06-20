@@ -28,11 +28,11 @@ class goblin{
   }
 }
 
-let hero = new warrior(15,5);
+let hero = new warrior(15 ,5);
 //test.stateParameters();
 
 let monster1 = new goblin(5,5)
 
-alert(`goblin loses ${hero.str - monster1.def} health`)
+output_test = `goblin loses ${hero.str - monster1.def} health`
 
 //alert(test_func(7,3))
