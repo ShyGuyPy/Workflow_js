@@ -3,19 +3,36 @@
 //   return n1 * n2
 // }
 
-class test_toy{
-  constructor(height, width){
-    this.height = height;
-    this.width = width;
+class warrior{
+  constructor(strength, defense){
+    this.str = strength;
+    this.def = defense;
   }
 
     stateParameters() {
-      alert(`my test_toy object is ${this.width} wide and ${this.height} tall`);
+      if(this.str >= 15) {
+      alert(`my test_toy object is ${this.def} wide and ${this.str} tall`);
+    } else if (this.str <15) {
+      alert("less than 15")
+
+    }else {
+      alert("no good")
+    }
     }
 }
 
-let test = new test_toy(10,12);
+class goblin{
+  constructor(strength, defense){
+    this.str = strength;
+    this.def = defense;
+  }
+}
 
-test.stateParameters();
+let hero = new warrior(15,5);
+//test.stateParameters();
+
+let monster1 = new goblin(5,5)
+
+alert(`goblin loses ${hero.str - monster1.def} health`)
 
 //alert(test_func(7,3))
